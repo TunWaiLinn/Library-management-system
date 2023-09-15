@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Members</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="books.html">Books</a></li>
-                <li><a href="members.html">Members</a></li>
-                <li><a href="borrowed.html">Borrowed Books</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Library</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="books.html">Books</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Members</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="borrowed.html">Borrowed Books</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
-    <main>
-        <section>
-            <h2>Members</h2>
-            <div class="member-list">
-                <!-- Add member cards here -->
-
-                <a class="member-card" href="member-detail.html">
-                    <img src="member1.jpg" alt="Member 1">
-                    <h3>Member Name 1</h3>
-                    <p>Email: member1@example.com</p>
-                </a>
-                <a class="member-card" href="member-detail.html">
-                    <img src="member2.jpg" alt="Member 2">
-                    <h3>Member Name 2</h3>
-                    <p>Email: member2@example.com</p>
-                </a>
-                <a class="member-card" href="member-detail.html">
-                    <img src="member3.jpg" alt="Member 3">
-                    <h3>Member Name 3</h3>
-                    <p>Email: member3@example.com</p>
-                </a>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">John Doe</h5>
+              <p class="card-text">Member ID: 12345</p>
+              <p class="card-text">Books Borrowed: 5</p>
+              <a href="#" class="btn btn-primary text-white">Details</a>
             </div>
+          </div>
+        </div>
+        <!-- Add more col-md-4 for additional members -->
+      </div>
+    </div>
 
-
-
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 Library</p>
-    </footer>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
 </html>
